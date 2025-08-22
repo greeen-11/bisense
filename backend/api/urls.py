@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import ping
+from .views import UserList
 
 urlpatterns = [
-    path('ping/', ping, name='ping'),  # Endpoint to check if the API is working
+    path('users/', UserList.as_view()),
 ]
